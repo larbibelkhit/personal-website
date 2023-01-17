@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='bg-white px-10'>
+      <main className='bg-black px-10'>
           <section>
             <nav className='py-10 mb-12 flex justify-between'>
               <h1 className='text-xl'>Larbi Belkhit</h1>
