@@ -20,10 +20,26 @@ export default function Home() {
               <h1 className='text-xl'>Larbi Belkhit</h1>
               <ul className='flex items-center'>
                 <li>
-                  <a className='bg-cyan-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a>
+                  <a className='bg-green-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a>
                 </li>
               </ul>
             </nav>
+            <div className='text-center p-10'>
+              <h2 className='text-5xl py-2 text-green-500 font-medium'>
+                Hello
+              </h2>
+              <h3 className='text-2xl py-2'>I do my best to code.</h3>
+              <p className='text-md py-5 leading-8'>
+                I'm an aspiring software engineer based in London. I have great interest in full-stack development, artificial intelligence, data mining, natural language processing, and everything in between.
+              </p>
+            </div>
+            <div className="text-xl flex justify-center">
+              <a className='border border-green-500 px-4 py-2 rounded-md text-green-500' 
+                 href="mailto:larbibelkhit@outlook.com" 
+                 target="_blank">
+                Get in touch
+              </a>
+            </div>
           </section>
       </main>
     </>
