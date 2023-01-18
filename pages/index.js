@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import { AiOutlineArrowRight } from 'react-icons/ai'
+import Experience from '../components/Experience'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -43,7 +44,7 @@ export default function Home() {
             </div>
           </section>
           <section>
-            <div className='text-center p-10 mb-10'>
+            <div className='text-center p-10 mb-2'>
               <h3 className='text-3xl py-1'>About Me</h3>
               <p className='text-md py-2 leading-8'>
                 I am currently a <span className='font-bold'>Research Analyst Intern</span> at <span className='font-bold text-green-500'>ABI Research</span>, 
@@ -72,6 +73,9 @@ export default function Home() {
                 <AiOutlineArrowRight className='text-green-500'/>
                 HTML & CSS</p>
             </div>
+          </section>
+          <section>
+            <Experience />
           </section>
       </main>
     </>
