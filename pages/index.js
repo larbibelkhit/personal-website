@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import { AiOutlineArrowRight } from 'react-icons/ai'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -39,6 +40,37 @@ export default function Home() {
                  target="_blank">
                 Get in touch
               </a>
+            </div>
+          </section>
+          <section>
+            <div className='text-center p-10 mb-10'>
+              <h3 className='text-3xl py-1'>About Me</h3>
+              <p className='text-md py-2 leading-8'>
+                I am currently a <span className='font-bold'>Research Analyst Intern</span> at <span className='font-bold text-green-500'>ABI Research</span>, 
+                working on various teams such as AI and Consumer Technology. 
+                Simultaneously, I am undertaking a full-time <span className='font-bold'>Bachelor's of Science </span> 
+                in <span className='font-bold'>Computer Science</span> at <span className='font-bold text-green-500'>Queen Mary, University of London</span>.
+              </p>
+              <h4>Here are some technologies I have been working with:</h4>
+              <p className='inline-flex gap-2 justify-center items-center'>
+                <AiOutlineArrowRight className='text-green-500'/>
+                JavaScript ES6+
+              </p>
+              <p className='flex gap-2 items-center justify-center'>
+                <AiOutlineArrowRight className='text-green-500'/>
+                React.js</p>
+              <p className='flex gap-2 items-center justify-center'>
+                <AiOutlineArrowRight className='text-green-500'/>
+                Vue.js</p>
+              <p className='flex gap-2 items-center justify-center'>
+                <AiOutlineArrowRight className='text-green-500'/>
+                Python</p>
+              <p className='flex gap-2 items-center justify-center'>
+                <AiOutlineArrowRight className='text-green-500'/>
+                Java</p>
+              <p className='flex gap-2 items-center justify-center'>
+                <AiOutlineArrowRight className='text-green-500'/>
+                HTML & CSS</p>
             </div>
           </section>
       </main>
