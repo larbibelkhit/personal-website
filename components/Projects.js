@@ -33,23 +33,25 @@ const Projects = () => {
   return (
     <div className='text-center p-10 mb-2'>
         <h3 className='text-3xl py-1 mb-5'>Creations</h3>
-        <div className="grid grid-cols-3 gap-2">
+        <div className="mx-auto mt-2.5 flex flex-wrap items-center justify-center gap-1">
             {projects.map(project => (
-                <div className='border rounded-md border-green-500 bg-transparent text-white'>
-                    <div className='flex justify-center gap-2 py-5 text-2xl'>
+                <div className='border rounded-md border-green-500 bg-transparent text-white max-w-lg'>
+                    <div className='flex justify-center gap-2 py-5 text-4xl'>
                         <AiFillFolder className='text-green-500'/>
                         <a href={project.github} target="_blank">
-                            <AiFillGithub />
+                            <AiFillGithub className='hover:text-green-500'/>
                         </a>
                         { project.link !== null && (
                             <a href={project.link} target="_blank">
-                                <MdWebAsset />
+                                <MdWebAsset className='hover:text-green-500'/>
                             </a>
                         )}
                     </div>
                     <div className='p-2 mb-4'>
                         <h1 className='mb-5 font-bold text-2xl'>{ project.title }</h1>
-                        <p className='mb-2'>{ project.desc }</p>
+                        <p className='mb-2 leading-8'>{ project.desc }</p>
+                    </div>
+                    <div className='mb-2 bottom-0'>
                         <p className='font-thin'>{ project.languages }</p>
                     </div>
                 </div>
