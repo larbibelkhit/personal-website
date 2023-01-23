@@ -33,7 +33,7 @@ const Projects = () => {
   return (
     <div className='text-center p-10 mb-2'>
         <h3 className='text-3xl py-1 mb-5'>Creations</h3>
-        <div className="mx-auto mt-2.5 flex flex-wrap items-center justify-center gap-1">
+        <div className="flex flex-wrap items-center justify-center gap-1 py-5">
             {projects.map(project => (
                 <div className='border rounded-md border-green-500 bg-transparent text-white max-w-lg'>
                     <div className='flex justify-center gap-2 py-5 text-4xl'>
