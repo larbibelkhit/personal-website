@@ -11,7 +11,7 @@ function Experience() {
                 "Developed, closely with both junior and senior analysts, global shipment estimates for consumer technologies providers",
                 "Produced, with in a team of 3, a landscape of major players in the growing FWA market",
                 "Collected key performance indicator data of AI chipset companies",
-                "Spent 1 month creating a list of what products and services over 100 various supply chain network companies are currently providing"
+                "Created a list of products and services offered by over 100 supply chain companies"
             ],
         },
         {
@@ -21,7 +21,7 @@ function Experience() {
             "duration": "OCT 2018 - JUL 2020",
             "desc": [
                 "Entrusted with archiving and preparing patient files that were needed for the next day",
-                "Incorporated strong customer service and team working skills to assist main receptionists throughout the day, including answering phone calls from current/ potential customers and passed on any important information to main receptionists",
+                "Assisted main receptionists with answering phone calls from current/ potential customers and passed on any important information to main receptionists",
                 "Tracked incoming and outgoing patients throughout the day and prepared Google Sheets document for next day",
             ],
         },
@@ -34,8 +34,9 @@ function Experience() {
         <div className="text-xl flex justify-center gap-2 py-5">
             {experience.map(job => (
                 <button type="button"
-                        className='border border-green-500 bg-bg-transparent px-4 py-2 rounded-md text-green-500 hover:text-white hover:bg-green-500'
+                        className='border border-green-500 bg-transparent px-4 py-2 rounded-md text-green-500 hover:text-white hover:bg-green-500'
                         onClick={() => setJob(job.id)}
+                        key={job.id}
                 >
                 {job.company}
                 </button>
@@ -46,7 +47,11 @@ function Experience() {
             <h2 className="text-xl">{experience[job].duration}</h2>
             <div className="mt-2">
                 {experience[job].desc.map(point => (
-                    <p className='text-md py-2 leading-8'>{point}</p>
+                    <p className='text-md py-2 leading-8'
+                        key={point}
+                    >
+                        {point}
+                    </p>
                 ))}
             </div>
         </div>
