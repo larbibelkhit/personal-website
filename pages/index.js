@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;700&display=swap" rel="stylesheet" />
       </Head>
-      <main className='bg-black px-10 font-sourceCodePro'>
+      <main className='bg-black px-10 font-sourceCodePro text-white'>
           <section>
             <nav className='py-10 mb-12 flex justify-between'>
               <h1 className='text-xl'>Larbi Belkhit</h1>
