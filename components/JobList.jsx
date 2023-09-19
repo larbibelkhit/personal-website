@@ -51,7 +51,7 @@ export default function App() {
   const activeContent = experienceItems[activeTab];
 
   return (
-    <div className="flex">
+    <div className="flex border border-white">
       <div className="w-1/4 ">
         {Object.keys(experienceItems).map((key) => (
           <Tab key={key} label={key} activeTab={activeTab} onClick={handleClick} isClicked={isClicked} />

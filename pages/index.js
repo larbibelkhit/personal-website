@@ -97,6 +97,7 @@ export default function Home() {
                 alt="Larbi"
                 width={300}
                 height={300}
+                className='rounded-sm'
               />
             </div>
           </div>
