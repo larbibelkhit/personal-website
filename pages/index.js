@@ -1,5 +1,6 @@
 import {BsFillPlayFill} from "react-icons/bs"
 import Image from "next/image"
+import JobList from "../components/JobList"
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
         <title>Larbi</title>
       </header>
       <main className="min-h-screen bg-[#0f0e17] text-[#a7a9be] px-40">
-        <nav className="py-10 mb-12 flex justify-between text-[#fffffe] sticky top-0">
+        <nav className="py-10 mb-12 flex justify-between text-[#fffffe] sticky top-0 bg-[#0f0e17] bg-opacity-25">
           <h1 className="text-xl">larbi</h1>
           <ul className="flex items-center">
             <li className="px-2 hover:text-[#ff8906]"><a href="#intro">Home</a></li>
@@ -23,9 +24,9 @@ export default function Home() {
             <p className="text-3xl">I create stuff sometimes.</p>
             <p>I am a research analyst based in London. I have great interest in full-stack development, artificial intelligence, data science, and everything in between.</p>  
           </div>
-          <a href="#" className="bg-[#ff8906] text-[#fffffe] px-4 py-4 rounded-sm text-xl">get in touch</a>
+          <a href="#" className="bg-[#ff8906] text-[#fffffe] px-4 py-3 rounded-sm text-xl">get in touch</a>
         </section>
-        <section id="about" className="mt-10 mb-10">
+        <section id="about" className="my-10">
           <p className="text-4xl">about me</p>
           <div id="about-section" className="grid grid-cols-2 gap-4">
             <div id="about-text" className="col-span-1">
@@ -78,6 +79,9 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
+              <p>
+                Outside of work, I am interested in following the developments of science. I also play a lot of video games and watch a lot of sports.
+              </p>
             </div>
             <div id="about-image" className="flex justify-center items-center">
               <Image 
@@ -89,8 +93,13 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="experience">
-          <p className="text-4xl">experience</p>
+        <section id="experience" className="my-10">
+          <p className="text-4xl mb-5">experience</p>
+          <JobList/>
+        </section>
+        <section id="credits" className="text-center mt-10">
+          <div>Built & designed by Larbi Belkhit.</div>
+          <div>All rights reserved. ©</div>
         </section>
       </main>
     </>
