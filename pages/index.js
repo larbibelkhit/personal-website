@@ -1,6 +1,7 @@
 import {BsFillPlayFill} from "react-icons/bs"
 import Image from "next/image"
 import JobList from "../components/JobList"
+import {FiMail} from "react-icons/fi"
 
 export default function Home() {
   return (
@@ -24,7 +25,14 @@ export default function Home() {
             <p className="text-3xl">I create stuff sometimes.</p>
             <p>I am a research analyst based in London. I have great interest in full-stack development, artificial intelligence, data science, and everything in between.</p>  
           </div>
-          <a href="#" className="bg-[#ff8906] text-[#fffffe] px-4 py-3 rounded-sm text-xl">get in touch</a>
+          <button type="button" className="bg-[#ff8906] text-[#fffffe] px-4 py-3 rounded-sm text-xl">
+            <a href="mailto:larbibelkhit@outlook.com">
+              <p className="flex justify-center items-center gap-2">
+                <FiMail />
+                Get in touch
+              </p>
+            </a>
+          </button>
         </section>
         <section id="about" className="my-10">
           <p className="text-4xl">about me</p>
