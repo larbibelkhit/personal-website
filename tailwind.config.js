@@ -8,6 +8,10 @@ module.exports = {
     extend: {
       fontFamily: {
         sourceCodePro: "Source Code Pro",
+      },
+      minHeight: {
+        "1/3": "33vh",
+        "3/4": "75vh",
       }
     },
   },

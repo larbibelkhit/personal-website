@@ -1,6 +1,5 @@
 "use client"
-import React, { useState } from 'react';
-import { BsFillPlayFill } from 'react-icons/bs';
+import { useState } from 'react';
 
 const Tab = ({ label, activeTab, onClick, isClicked }) => (
   <button
@@ -51,14 +50,14 @@ export default function App() {
   const activeContent = experienceItems[activeTab];
 
   return (
-    <div className="flex ">
-      <div className="w-1/4 ">
+    <div className="flex flex-col md:flex-row">
+      <div className="mb-5 md:mb-0 md:w-1/4">
         {Object.keys(experienceItems).map((key) => (
           <Tab key={key} label={key} activeTab={activeTab} onClick={handleClick} isClicked={isClicked} />
         ))}
       </div>
-      <div className="w-3/4 px-4">
-        <h3 className="text-2xl font-bold">{activeContent.jobTitle} <span className="text-[#ff8906]">{activeTab}</span></h3>
+      <div className="md:w-3/4 px-4 min-h-3/4 md:min-h-1/3">
+        <h3 className="text-xl md:text-2xl font-bold">{activeContent.jobTitle} <span className="text-[#ff8906]">{activeTab}</span></h3>
         <p className="text-xl">{activeContent.duration}</p>
         <ul className="list-none pl-5" id='experience-list'>
           {activeContent.desc.map((item, index) => (
