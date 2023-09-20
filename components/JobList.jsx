@@ -4,7 +4,7 @@ import { useState } from 'react';
 const Tab = ({ label, activeTab, onClick, isClicked }) => (
   <button
     type='button'
-    className={`w-full py-2 px-4 text-left text-lg transition ease-in duration-[25ms] 
+    className={`w-full py-2 px-4 text-left text-lg transition ease-in duration-[25ms] uppercase
                ${activeTab === label ? 'text-[#ff8906] border-r-2 border-[#ff8906]' : ''}
                ${isClicked & activeTab === label ? 'bg-[#ff8906] bg-opacity-50' : ''}`}
     onClick={() => onClick(label)}

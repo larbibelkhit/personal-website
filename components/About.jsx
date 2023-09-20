@@ -8,8 +8,8 @@ export default function About () {
           <div id="about-section" className="md:grid md:grid-cols-2 gap-4">
             <div id="about-text" className="md:col-span-1">
               <p>
-                I am currently a <b>Research Analyst</b> at <a href="https://www.abiresearch.com/" className="text-[#ff8906]">ABI Research</a>, working in the 5G Mobile & Network Infrastructure team.
-                I have just graduated with <b>Bachelor of Science with Honours</b> in <b>Computer Science</b> from <a href="https://www.qmul.ac.uk/" className="text-[#ff8906]">Queen Mary, University of London</a>.
+                I am currently a <b>Research Analyst</b> at <a href="https://www.abiresearch.com/" className="text-[#ff8906] font-bold">ABI Research</a>, working in the 5G Mobile & Network Infrastructure team.
+                I have just graduated with <b>Bachelor of Science with Honours</b> in <b>Computer Science</b> from <a href="https://www.qmul.ac.uk/" className="text-[#ff8906] font-bold">Queen Mary, University of London</a>.
               </p>
               <p>
                 Here are some technologies I am currently working with:
