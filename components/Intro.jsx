@@ -1,10 +1,18 @@
 import { AiFillMail } from "react-icons/ai"
+import { TypeAnimation } from "react-type-animation"
 
 export default function Intro() {
     return (
         <section id="intro" className="text-center pt-20 md:pt-5">
           <div className="mb-4">
-            <p className="text-4xl md:text-5xl text-[#fffffe] font-bold animate-type">hi, larbi here.</p>
+            <p className="text-4xl md:text-5xl text-[#fffffe] font-bold">
+              <TypeAnimation 
+                sequence={[
+                  "Hi, Larbi here."
+                ]}
+                speed={25}
+              />
+            </p>
             <p className="text-xl md:text-3xl">I create stuff sometimes.</p>
             <p>I am a research analyst based in London. I have great interest in full-stack development, artificial intelligence, data science, and everything in between.</p>  
           </div>

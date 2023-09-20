@@ -12,7 +12,7 @@ module.exports = {
       minHeight: {
         "1/3": "33vh",
         "3/4": "75vh",
-      }
+      },
     },
   },
   plugins: [],
