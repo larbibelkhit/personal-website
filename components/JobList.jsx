@@ -4,7 +4,7 @@ import { useState } from 'react';
 const Tab = ({ label, activeTab, onClick, isClicked }) => (
   <button
     type='button'
-    className={`w-full py-2 px-4 text-left transition ease-in duration-[25ms] 
+    className={`w-full py-2 px-4 text-left text-lg transition ease-in duration-[25ms] 
                ${activeTab === label ? 'text-[#ff8906] border-r-2 border-[#ff8906]' : ''}
                ${isClicked & activeTab === label ? 'bg-[#ff8906] bg-opacity-50' : ''}`}
     onClick={() => onClick(label)}
@@ -56,10 +56,10 @@ export default function App() {
           <Tab key={key} label={key} activeTab={activeTab} onClick={handleClick} isClicked={isClicked} />
         ))}
       </div>
-      <div className="md:w-3/4 px-4 min-h-3/4 md:min-h-1/3">
-        <h3 className="text-xl md:text-2xl font-bold">{activeContent.jobTitle} <span className="text-[#ff8906]">{activeTab}</span></h3>
+      <div className=" md:w-3/4 px-4 min-h-3/4 md:min-h-1/3">
+        <h3 className="text-lg md:text-2xl font-bold">{activeContent.jobTitle} <span className="text-[#ff8906]">{activeTab}</span></h3>
         <p className="text-xl">{activeContent.duration}</p>
-        <ul className="list-none pl-5" id='experience-list'>
+        <ul className="list-none pl-5 pt-5" id='experience-list'>
           {activeContent.desc.map((item, index) => (
             <li key={index} className='inline-flex align-middle'>
                 {item}

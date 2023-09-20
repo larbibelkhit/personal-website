@@ -1,6 +1,7 @@
 import JobList from "../components/JobList"
 import Intro from "@/components/Intro"
 import About from "@/components/About"
+import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai"
 
 export default function Home() {
   return (
@@ -25,6 +26,17 @@ export default function Home() {
           <JobList/>
         </section>
         <section id="credits" className="text-center mt-10">
+          <div id="links" className="flex justify-center items-center text-4xl gap-4 mb-2">
+            <a href="https://github.com/larbibelkhit/" className="hover:text-[#ff8906]">
+              <AiFillGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/larbibelkhit/" className="hover:text-[#ff8906]">
+              <AiFillLinkedin />
+            </a>
+            <a href="mailto:larbibelkhit@outlook.com" className="hover:text-[#ff8906]">
+              <AiFillMail />
+            </a>
+          </div>
           <div>Built & designed by Larbi Belkhit.</div>
           <div>All rights reserved. ©</div>
         </section>
