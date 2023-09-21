@@ -4,7 +4,7 @@ import FadeSection from "./FadeSection"
 
 export default function Intro() {
     return (
-        <section id="intro" className="min-h-3/4 text-center pt-20 md:pt-5">
+        <section id="intro" className="min-h-2/3 md:min-h-3/4 text-center pt-20 md:pt-5">
           <FadeSection>
             <div className="mb-4">
               <p className="text-4xl md:text-5xl text-[#fffffe] font-bold">
