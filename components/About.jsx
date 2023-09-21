@@ -1,5 +1,6 @@
 import {BsFillPlayFill} from "react-icons/bs"
 import Image from "next/image"
+import TechStack from "./TechStack"
 
 export default function About () {
     return (
@@ -14,48 +15,7 @@ export default function About () {
               <p>
                 Here are some technologies I am currently working with:
               </p>
-              <div className="flex gap-3 md:gap-6" id="tech-stack">
-                <ul>
-                  <li className="flex items-center">
-                    <span>
-                    <BsFillPlayFill className="text-[#ff8906]"/>
-                    </span>
-                    JavaScript ES6+
-                  </li>
-                  <li className="flex items-center">
-                    <span>
-                    <BsFillPlayFill className="text-[#ff8906]"/>
-                    </span>
-                    Next JS
-                  </li>
-                  <li className="flex items-center">
-                    <span>
-                    <BsFillPlayFill className="text-[#ff8906]"/>
-                    </span>
-                    Vue JS
-                  </li>
-                </ul>
-                <ul>
-                <li className="flex items-center">
-                    <span>
-                    <BsFillPlayFill className="text-[#ff8906]"/>
-                    </span>
-                    Python
-                  </li>
-                  <li className="flex items-center">
-                    <span>
-                    <BsFillPlayFill className="text-[#ff8906]"/>
-                    </span>
-                    Java
-                  </li>
-                  <li className="flex items-center">
-                    <span>
-                    <BsFillPlayFill className="text-[#ff8906]"/>
-                    </span>
-                    HTML & CSS
-                  </li>
-                </ul>
-              </div>
+              <TechStack />
               <p>
                 Outside of work, I am interested in following the developments of science. I also play a lot of video games and watch a lot of sports.
               </p>

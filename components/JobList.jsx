@@ -1,5 +1,6 @@
 "use client"
 import { useState } from 'react';
+import FadeSection from './FadeSection';
 
 const Tab = ({ label, activeTab, onClick, isClicked }) => (
   <button
@@ -61,9 +62,11 @@ export default function App() {
         <p className="text-xl">{activeContent.duration}</p>
         <ul className="list-none pl-5 pt-5" id='experience-list'>
           {activeContent.desc.map((item, index) => (
-            <li key={index} className='inline-flex align-middle'>
-                {item}
-            </li>
+            <FadeSection delay={`${index+1}00ms`}>
+              <li key={index} className='inline-flex align-middle'>
+                  {item}
+              </li>
+            </FadeSection>
           ))}
         </ul>
       </div>
