@@ -2,6 +2,7 @@ import JobList from "../components/JobList"
 import Intro from "@/components/Intro"
 import About from "@/components/About"
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai"
+import FadeSection from "@/components/FadeSection"
 
 export default function Home() {
   return (
@@ -22,8 +23,10 @@ export default function Home() {
         <Intro />
         <About />
         <section id="experience" className="my-10">
-          <p className="text-3xl md:text-4xl mb-5">experience</p>
-          <JobList/>
+          <FadeSection>
+            <p className="text-3xl md:text-4xl mb-5">experience</p>
+            <JobList/>
+          </FadeSection>
         </section>
         <section id="credits" className="text-center mt-10">
           <div id="links" className="flex justify-center items-center text-4xl gap-4 mb-2">
