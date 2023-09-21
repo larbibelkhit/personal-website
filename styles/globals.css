@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-li::before{
+#experience-list li::before, #tech-stack li::before {
   content: "▹    ";
   color: #ff8906;
 }

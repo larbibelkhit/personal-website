@@ -58,17 +58,19 @@ export default function App() {
         ))}
       </div>
       <div className=" md:w-3/4 px-4 min-h-3/4 md:min-h-1/3">
-        <h3 className="text-lg md:text-2xl font-bold">{activeContent.jobTitle} <span className="text-[#ff8906]">{activeTab}</span></h3>
-        <p className="text-xl">{activeContent.duration}</p>
-        <ul className="list-none pl-5 pt-5" id='experience-list'>
-          {activeContent.desc.map((item, index) => (
-            <FadeSection delay={`${index+1}00ms`}>
-              <li key={index} className='inline-flex align-middle'>
-                  {item}
-              </li>
-            </FadeSection>
-          ))}
-        </ul>
+        <FadeSection>
+          <h3 className="text-lg md:text-2xl font-bold">{activeContent.jobTitle} <span className="text-[#ff8906]">{activeTab}</span></h3>
+          <p className="text-xl">{activeContent.duration}</p>
+          <ul className="list-none pl-5 pt-5" id='experience-list'>
+            {activeContent.desc.map((item, index) => (
+              <FadeSection delay={`${index+1}00ms`}>
+                <li key={index} className='inline-flex align-middle'>
+                    {item}
+                </li>
+              </FadeSection>
+            ))}
+          </ul>
+        </FadeSection>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ export default function Home() {
       <main className="min-h-screen bg-[#0f0e17] text-[#a7a9be] px-10 py-5 md:px-40">
         <nav className="py-10 mb-12 md:flex justify-between text-[#fffffe] bg-[#0f0e17] bg-opacity-25 hidden md:sticky md:top-0">
           <h1 className="text-xl">larbi</h1>
-          <ul className="flex items-center">
+          <ul className="flex items-center list-none">
             <li className="px-2 hover:text-[#ff8906]"><a href="#intro">Home</a></li>
             <li className="px-2 hover:text-[#ff8906]"><a href="#about">About</a></li>
             <li className="px-2 hover:text-[#ff8906]"><a href="#experience">Experience</a></li>
