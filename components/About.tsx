@@ -38,7 +38,7 @@ const About = () => {
                 </div>
             </div>
             <div className='top-28 overflow-hidden rounded-md md:sticky md:w-1/2 flex justify-center items-center'>
-                <Image src={"/larbi.jpg"} alt="Larbi at his graduation" width={450} height={300} className="rounded-md" />
+                <Image src={"/larbi.JPG"} alt="Larbi at his graduation" width={450} height={300} className="rounded-md" />
             </div>
         </div>
     </section>
