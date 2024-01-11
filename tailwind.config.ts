@@ -13,6 +13,7 @@ const config: Config = {
       "blue-bg": "#1288FF",
       "blue-highlight": "#0011ff",
       "black": "#000000",
+      "hover": "#B7FF00"
     },
     extend: {
       lineHeight: {

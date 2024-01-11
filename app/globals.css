@@ -28,10 +28,6 @@ body {
   .padding-container {
     @apply px-6 lg:px-20 2xl:px-0;
   }
-  .icon-xl {
-    line-height: 2rem;
-    font-size: 1.802rem;
-  }
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

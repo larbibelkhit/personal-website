@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className='bg-blue-bg'>
-        <header className='fixed top-0 left-0 right-0 max-container padding-container bg-blue-bg backdrop-filter backdrop-blur-md bg-opacity-40 z-50'>
+        <header className='fixed top-0 left-0 right-0 bg-blue-bg backdrop-filter backdrop-blur-md bg-opacity-40 z-50'>
           <link rel="icon" href="/favicon.svg" sizes="any" />
           <Navbar />
         </header>
