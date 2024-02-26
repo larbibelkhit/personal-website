@@ -21,6 +21,10 @@ const Navbar = () => {
             href: "#experience",
             title: "experience"
         },
+        {
+            href: "/",
+            title: "projects"
+        }
     ]
 
     return (
@@ -31,7 +35,7 @@ const Navbar = () => {
                     <Link 
                         href={link.href} 
                         key={link.title}
-                        className="capitalize text-lg font-semibold cursor-pointer px-4 py-2 hover:text-hover"
+                        className="capitalize text-lg font-semibold cursor-pointer px-4 py-2 hover:text-black"
                     >
                         {link.title}
                     </Link>
@@ -39,13 +43,13 @@ const Navbar = () => {
             </ul>
             <ul className="h-full gap-5 md:gap-12 flex">
                 <Link href={"https://www.linkedin.com/in/larbibelkhit/"}>
-                    <AiOutlineLinkedin className="text-2xl hover:text-hover"/>
+                    <AiOutlineLinkedin className="text-2xl hover:text-black"/>
                 </Link>
                 <Link href={"https://github.com/larbibelkhit/"}>
-                    <FiGithub className="text-2xl hover:text-hover"/>
+                    <FiGithub className="text-2xl hover:text-black"/>
                 </Link>
                 <Link href={"mailto:larbibelkhit@outlook.com"}>
-                    <IoMailOutline className="text-2xl hover:text-hover"/>
+                    <IoMailOutline className="text-2xl hover:text-black"/>
                 </Link>
             </ul>
         </nav>

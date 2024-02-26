@@ -5,24 +5,24 @@ const Experience = () => {
             id: 1,
             company: "ABI Research",
             title: "Research Analyst",
-            stint: "June 2021 - present",
+            stint: "June 2023 - present",
+            description: [
+                "Created a 5 year market forecast for the outdoor network infrastructure market, including 5G Open RAN and Massive MIMO, allowing clients to make more informed investment strategies in the 5G sector.",
+                "Conducted an in-depth analysis of 5G Fixed Wireless Access vendors, inclduing market share, competitive analysis and competitive dynamics, assiting operators in forming strategic partnerships.",
+                "Wrote monthly article posts focusing on trending network topics such as Open RAN, silicon photonics and vRAN, informing clients of the latest industry news, how it impacts the market, and recommendations for the industry to react."
+            ]
+        },
+        {
+            id: 2,
+            company: "ABI Research",
+            title: "Research Intern",
+            stint: "June 2021 - May 2023",
             description: [
                 "Conducted in-depth analysis of TinyML and Edge AI, forecasting Edge AI chipset shipments by use case, and contributed to a comprehensive consumer technologies market update PowerPoint presentation and Excel workbook.",
                 "Updated an Excel workbook for the supply chain team, compiling data on 200 companies across OSS/BSS, RAN, E2E, Core, and Edge, enhancing vendor knowledge for informed decision-making.",
                 "Developed 2 Python-based automation tools, saving the Networks team over 15 hours in data collection, resulting in heightened efficiency and a shift in focus to higher-value tasks."
             ]
         },
-        {
-            id: 2,
-            company: "Chislehurst Chiropractic Clinic",
-            title: "Office Assistant",
-            stint: "October 2018 - June 2020",
-            description: [
-                "Assisted receptionists using customer service and collaboration skills, handling over 15 phone calls daily and relaying information, improving patient experience and clinic communication efficiency.",
-                "Tracked over 100 patients daily and prepared Google Sheets for scheduling, streamlining operations and boosting clinic efficiency and organisation.",
-                "Streamlined the archiving and preparation of around 100 patient files for the next day, ensuring a seamless daily workflow and improving the efficiency of the clinic's administrative processes."
-            ]
-        }
     ]
 
   return (
