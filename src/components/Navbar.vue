@@ -3,9 +3,10 @@ import { onMounted, onUnmounted, ref } from 'vue'
 import Logo from '@/components/Logo.vue'
 
 const NAV_LINKS = [
-  { href: '#hero', title: 'home' },
-  { href: '#about', title: 'about' },
-  { href: '#experience', title: 'experience' },
+  { href: '/#hero', title: 'home' },
+  { href: '/#about', title: 'about' },
+  { href: '/#experience', title: 'experience' },
+  { href: '/blog', title: 'blog' },
 ]
 
 const SOCIAL_LINKS = [
@@ -41,17 +42,17 @@ onUnmounted(() => {
           : 'bg-ivory/40 backdrop-blur-md border-transparent',
       ]"
     >
-      <a href="#hero" class="flex items-center shrink-0 text-ink" aria-label="Home">
+      <RouterLink to="/#hero" class="flex items-center shrink-0 text-ink" aria-label="Home">
         <Logo class="h-6 w-auto" />
-      </a>
+      </RouterLink>
       <ul class="hidden md:flex items-center gap-1 justify-self-center">
         <li v-for="link in NAV_LINKS" :key="link.title">
-          <a
-            :href="link.href"
+          <RouterLink
+            :to="link.href"
             class="capitalize px-3.5 py-1.5 text-[0.85rem] tracking-wide text-muted hover:text-ink rounded-sm hover:bg-panel/70 transition-all duration-200"
           >
             {{ link.title }}
-          </a>
+          </RouterLink>
         </li>
       </ul>
       <div class="flex items-center justify-end gap-4">
@@ -88,15 +89,15 @@ onUnmounted(() => {
       menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none',
     ]"
   >
-    <a
+    <RouterLink
       v-for="link in NAV_LINKS"
       :key="link.title"
-      :href="link.href"
+      :to="link.href"
       @click="menuOpen = false"
       class="capitalize text-2xl tracking-wide text-muted hover:text-accent transition-colors duration-200"
     >
       {{ link.title }}
-    </a>
+    </RouterLink>
     <ul class="mt-4 flex items-center gap-8">
       <li v-for="social in SOCIAL_LINKS" :key="social.label">
         <a :href="social.href" :aria-label="social.label" @click="menuOpen = false">

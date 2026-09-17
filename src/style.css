@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme {
   --color-ivory: #f7f6f2;
@@ -29,4 +30,64 @@ body {
 ::selection {
   background-color: var(--color-accent);
   color: #ffffff;
+}
+
+.prose-blog {
+  --tw-prose-body: var(--color-muted);
+  --tw-prose-headings: var(--color-ink);
+  --tw-prose-lead: var(--color-muted);
+  --tw-prose-links: var(--color-accent);
+  --tw-prose-bold: var(--color-ink);
+  --tw-prose-counters: var(--color-soft);
+  --tw-prose-bullets: var(--color-line);
+  --tw-prose-hr: var(--color-line);
+  --tw-prose-quotes: var(--color-ink);
+  --tw-prose-quote-borders: var(--color-accent);
+  --tw-prose-captions: var(--color-soft);
+  --tw-prose-code: var(--color-ink);
+  --tw-prose-pre-code: var(--color-ivory);
+  --tw-prose-pre-bg: var(--color-ink);
+  --tw-prose-th-borders: var(--color-line);
+  --tw-prose-td-borders: var(--color-line);
+  font-weight: 300;
+}
+
+.prose-blog code:not(pre code) {
+  background-color: var(--color-panel);
+  border-radius: 0.25rem;
+  padding: 0.15em 0.4em;
+  font-weight: 400;
+}
+
+.prose-blog a {
+  text-decoration-color: var(--color-line);
+}
+
+/* Minimal highlight.js token palette matching the site theme */
+.hljs {
+  color: var(--color-ivory);
+}
+.hljs-comment,
+.hljs-quote {
+  color: var(--color-soft);
+  font-style: italic;
+}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal {
+  color: #7fb0e0;
+}
+.hljs-string,
+.hljs-attr {
+  color: #9fd4a3;
+}
+.hljs-number,
+.hljs-built_in,
+.hljs-type {
+  color: #e0b980;
+}
+.hljs-title,
+.hljs-function {
+  color: #f0ece2;
+  font-weight: 500;
 }
